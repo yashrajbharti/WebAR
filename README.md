@@ -9,6 +9,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**a. [Marker Detection](#Marker-Detection)**   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**b. [Model Rotation](#Model-Rotation)**   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**c. [Model Scaling](#Model-Scaling)**  
+4. **[FAQs](#FAQs)**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**a. [Why AR.js?](#Why-ARjs)**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**b. [What next?](#What-next)** 
 # ARify-the-malls
 
 * https://3sidedcube.com/ar-js-a-guide-to-developing-an-augmented-reality-web-app/  
