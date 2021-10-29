@@ -797,4 +797,55 @@
   23.0769230769% {
     transform: translateX(-21vw) translateY(-7vh) scale(0.35);
   }
+  26.9230769231% {
+    transform: translateX(40vw) translateY(24vh) scale(0.55);
+  }
+  30.7692307692% {
+    transform: translateX(-41vw) translateY(-14vh) scale(0.78);
+  }
+  34.6153846154% {
+    transform: translateX(-24vw) translateY(46vh) scale(0.73);
+  }
+  38.4615384615% {
+    transform: translateX(19vw) translateY(25vh) scale(0.34);
+  }
+  42.3076923077% {
+    transform: translateX(20vw) translateY(-42vh) scale(0.63);
+  }
+  46.1538461538% {
+    transform: translateX(4vw) translateY(8vh) scale(0.59);
+  }
+  50% {
+    transform: translateX(22vw) translateY(6vh) scale(0.82);
+  }
+  53.8461538462% {
+    transform: translateX(17vw) translateY(-28vh) scale(0.26);
+  }
+  57.6923076923% {
+    transform: translateX(35vw) translateY(49vh) scale(0.3);
+  }
+  61.5384615385% {
+    transform: translateX(36vw) translateY(-8vh) scale(0.84);
+  }
+  65.3846153846% {
+    transform: translateX(23vw) translateY(0vh) scale(0.84);
+  }
+  69.2307692308% {
+    transform: translateX(40vw) translateY(-1vh) scale(0.89);
+  }
+  73.0769230769% {
+    transform: translateX(-39vw) translateY(1vh) scale(0.39);
+  }
+  76.9230769231% {
+    transform: translateX(49vw) translateY(40vh) scale(0.46);
+  }
+  80.7692307692% {
+    transform: translateX(26vw) translateY(27vh) scale(0.84);
+  }
+  84.6153846154% {
+    transform: translateX(41vw) translateY(-19vh) scale(0.53);
+  }
+  88.4615384615% {
+    transform: translateX(-34vw) translateY(37vh) scale(0.31);
+  }
   
