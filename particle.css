@@ -125,3 +125,37 @@
   animation-delay: 0ms, 3189ms;
 }
 
+@keyframes move2 {
+  0% {
+    transform: translateX(15vw) translateY(-8vh) scale(0.96);
+  }
+  5% {
+    transform: translateX(-29vw) translateY(0vh) scale(0.33);
+  }
+  10% {
+    transform: translateX(-38vw) translateY(29vh) scale(0.71);
+  }
+  15% {
+    transform: translateX(-13vw) translateY(39vh) scale(0.4);
+  }
+  20% {
+    transform: translateX(-26vw) translateY(-25vh) scale(0.73);
+  }
+  25% {
+    transform: translateX(24vw) translateY(18vh) scale(0.85);
+  }
+  30% {
+    transform: translateX(14vw) translateY(-35vh) scale(0.9);
+  }
+  35% {
+    transform: translateX(43vw) translateY(-47vh) scale(0.79);
+  }
+  40% {
+    transform: translateX(28vw) translateY(0vh) scale(0.63);
+  }
+  45% {
+    transform: translateX(24vw) translateY(24vh) scale(0.67);
+  }
+  50% {
+    transform: translateX(4vw) translateY(30vh) scale(0.83);
+  }
