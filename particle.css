@@ -22,3 +22,20 @@
   opacity: 0.4;
   animation: drift ease alternate infinite;
 }
+.firefly::after {
+  background: white;
+  opacity: 0;
+  box-shadow: 0 0 0vw 0vw white;
+  animation: drift ease alternate infinite, flash ease infinite;
+}
+
+.firefly:nth-child(1) {
+  animation-name: move1;
+}
+.firefly:nth-child(1)::before {
+  animation-duration: 18s;
+}
+.firefly:nth-child(1)::after {
+  animation-duration: 18s, 6361ms;
+  animation-delay: 0ms, 2466ms;
+}
