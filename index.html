@@ -8,9 +8,15 @@
       <a-assets>
             <a-asset-item id="headphone" src=./headphone/Headphones_01.gltf></a-asset-item>
         </a-assets>
-      <a-marker preset="hiro">
+      <a-nft
+      type="nft"
+      url="./image-targets/bose.fset3"
+      smooth="true"
+      smoothCount="10"
+      smoothTolerance=".01"
+      smoothThreshold="5">
         <a-entity position="0 0 0" scale="0.05 0.05 0.05" gltf-model="#headphone" animation-mixer></a-entity>
-      </a-marker>
+      </a-nft>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
