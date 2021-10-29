@@ -7,3 +7,4 @@
 * https://aframe.io/docs/1.2.0/components/gltf-model.html  
 * https://medium.com/chialab-open-source/10-tips-to-enhance-your-ar-js-app-8b44c6faffca  
 * https://medium.com/chialab-open-source/how-to-deliver-ar-on-the-web-only-with-a-qr-code-e24b7b61f8cb
+* https://github.com/jeromeetienne/AR.js/blob/master/aframe/examples/multiple-independent-markers.html
