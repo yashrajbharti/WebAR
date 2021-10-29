@@ -159,3 +159,45 @@
   50% {
     transform: translateX(4vw) translateY(30vh) scale(0.83);
   }
+ 55% {
+    transform: translateX(-22vw) translateY(8vh) scale(0.47);
+  }
+  60% {
+    transform: translateX(-8vw) translateY(46vh) scale(0.6);
+  }
+  65% {
+    transform: translateX(15vw) translateY(-19vh) scale(0.96);
+  }
+  70% {
+    transform: translateX(36vw) translateY(24vh) scale(0.69);
+  }
+  75% {
+    transform: translateX(-18vw) translateY(-14vh) scale(0.63);
+  }
+  80% {
+    transform: translateX(-8vw) translateY(4vh) scale(0.74);
+  }
+  85% {
+    transform: translateX(-47vw) translateY(45vh) scale(1);
+  }
+  90% {
+    transform: translateX(-22vw) translateY(43vh) scale(0.78);
+  }
+  95% {
+    transform: translateX(-13vw) translateY(-11vh) scale(0.7);
+  }
+  100% {
+    transform: translateX(28vw) translateY(26vh) scale(0.4);
+  }
+}
+.firefly:nth-child(3) {
+  animation-name: move3;
+}
+.firefly:nth-child(3)::before {
+  animation-duration: 13s;
+}
+.firefly:nth-child(3)::after {
+  animation-duration: 13s, 10182ms;
+  animation-delay: 0ms, 5016ms;
+}
+
