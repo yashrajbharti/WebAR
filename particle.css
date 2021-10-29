@@ -949,3 +949,55 @@
 .firefly:nth-child(12) {
   animation-name: move12;
 }
+.firefly:nth-child(12)::before {
+  animation-duration: 12s;
+}
+.firefly:nth-child(12)::after {
+  animation-duration: 12s, 5012ms;
+  animation-delay: 0ms, 8294ms;
+}
+
+@keyframes move12 {
+  0% {
+    transform: translateX(8vw) translateY(34vh) scale(0.65);
+  }
+  3.7037037037% {
+    transform: translateX(12vw) translateY(39vh) scale(0.85);
+  }
+  7.4074074074% {
+    transform: translateX(16vw) translateY(-28vh) scale(0.29);
+  }
+  11.1111111111% {
+    transform: translateX(12vw) translateY(29vh) scale(0.5);
+  }
+  14.8148148148% {
+    transform: translateX(16vw) translateY(7vh) scale(0.56);
+  }
+  18.5185185185% {
+    transform: translateX(46vw) translateY(44vh) scale(0.77);
+  }
+  22.2222222222% {
+    transform: translateX(-47vw) translateY(-19vh) scale(0.57);
+  }
+  25.9259259259% {
+    transform: translateX(-41vw) translateY(11vh) scale(0.57);
+  }
+  29.6296296296% {
+    transform: translateX(-19vw) translateY(27vh) scale(0.44);
+  }
+  33.3333333333% {
+    transform: translateX(20vw) translateY(-47vh) scale(0.61);
+  }
+  37.037037037% {
+    transform: translateX(-8vw) translateY(-43vh) scale(0.9);
+  }
+  40.7407407407% {
+    transform: translateX(41vw) translateY(5vh) scale(0.56);
+  }
+  44.4444444444% {
+    transform: translateX(-37vw) translateY(50vh) scale(0.26);
+  }
+  48.1481481481% {
+    transform: translateX(39vw) translateY(-46vh) scale(0.62);
+  }
+  
