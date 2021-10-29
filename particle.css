@@ -1049,3 +1049,52 @@
 .firefly:nth-child(13)::before {
   animation-duration: 10s;
 }
+.firefly:nth-child(13)::after {
+  animation-duration: 10s, 7854ms;
+  animation-delay: 0ms, 6397ms;
+}
+
+@keyframes move13 {
+  0% {
+    transform: translateX(8vw) translateY(35vh) scale(0.38);
+  }
+  5% {
+    transform: translateX(-3vw) translateY(-2vh) scale(0.27);
+  }
+  10% {
+    transform: translateX(38vw) translateY(-8vh) scale(0.97);
+  }
+  15% {
+    transform: translateX(-36vw) translateY(-27vh) scale(0.44);
+  }
+  20% {
+    transform: translateX(-32vw) translateY(-14vh) scale(0.76);
+  }
+  25% {
+    transform: translateX(15vw) translateY(-25vh) scale(0.26);
+  }
+  30% {
+    transform: translateX(-7vw) translateY(29vh) scale(0.29);
+  }
+  35% {
+    transform: translateX(38vw) translateY(-24vh) scale(0.95);
+  }
+  40% {
+    transform: translateX(-34vw) translateY(43vh) scale(0.27);
+  }
+  45% {
+    transform: translateX(32vw) translateY(11vh) scale(0.46);
+  }
+  50% {
+    transform: translateX(-44vw) translateY(-36vh) scale(0.34);
+  }
+  55% {
+    transform: translateX(43vw) translateY(48vh) scale(0.87);
+  }
+  60% {
+    transform: translateX(-48vw) translateY(15vh) scale(0.38);
+  }
+  65% {
+    transform: translateX(17vw) translateY(-30vh) scale(0.54);
+  }
+  
