@@ -12,6 +12,10 @@
 4. **[FAQs](#FAQs)**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**a. [Why AR.js?](#Why-ARjs)**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**b. [What next?](#What-next)** 
+5. **[Wrapping up](#Wrapping-up)**  
+  
+- - -
+
 # ARify-the-malls
 
 * https://3sidedcube.com/ar-js-a-guide-to-developing-an-augmented-reality-web-app/  
