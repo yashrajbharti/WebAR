@@ -6,16 +6,24 @@
     <a-scene embedded arjs>
       <a-assets>
            <a-asset-item id="headphone" src=./headphone/Headphones_01.gltf></a-asset-item>
-<!--            <a-asset-item id="model" src=./model/model.gltf></a-asset-item> -->
-
-
       </a-assets>
-      <a-marker preset="hiro">
 
-           <a-entity position="0 0 0" scale="0.05 0.05 0.05" gltf-model="#headphone"></a-entity>
-<!--            <a-entity position="0 0 0" scale="1 1 1" gltf-model="#model"></a-entity> -->
+           <a-marker-camera preset='custom' type='pattern' url='image-targets/jbl.patt'>
 
-      </a-marker>
+                    <a-entity position="0 0 0" rotation="90 45 180" scale="0.2 0.2 0.2" gltf-model="#headphone"></a-entity>
+
+          </a-marker-camera>
+        
+         <a-assets>
+               <a-asset-item id="model" src=./model/model.gltf></a-asset-item>
+         </a-assets>
+
+       <a-marker-camera preset='custom2' type='pattern' url='image-targets/nike.patt'>
+
+                <a-entity position="0 0 0" scale="0.7 0.7 0.7" gltf-model="#model"></a-entity>
+
+      </a-marker-camera>
+         
       <a-entity camera></a-entity>
     </a-scene>
   </body>
