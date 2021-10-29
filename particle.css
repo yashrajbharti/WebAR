@@ -299,3 +299,52 @@
   25% {
     transform: translateX(-31vw) translateY(-37vh) scale(0.82);
   }
+ 30% {
+    transform: translateX(-22vw) translateY(41vh) scale(0.31);
+  }
+  35% {
+    transform: translateX(30vw) translateY(26vh) scale(0.85);
+  }
+  40% {
+    transform: translateX(29vw) translateY(-45vh) scale(0.97);
+  }
+  45% {
+    transform: translateX(-48vw) translateY(36vh) scale(0.79);
+  }
+  50% {
+    transform: translateX(-37vw) translateY(21vh) scale(0.44);
+  }
+  55% {
+    transform: translateX(-3vw) translateY(27vh) scale(0.46);
+  }
+  60% {
+    transform: translateX(8vw) translateY(-45vh) scale(0.71);
+  }
+  65% {
+    transform: translateX(9vw) translateY(29vh) scale(0.93);
+  }
+  70% {
+    transform: translateX(37vw) translateY(14vh) scale(0.6);
+  }
+  75% {
+    transform: translateX(-26vw) translateY(-49vh) scale(0.27);
+  }
+  80% {
+    transform: translateX(18vw) translateY(12vh) scale(0.95);
+  }
+  85% {
+    transform: translateX(-41vw) translateY(43vh) scale(0.4);
+  }
+  90% {
+    transform: translateX(13vw) translateY(42vh) scale(0.4);
+  }
+  95% {
+    transform: translateX(35vw) translateY(-49vh) scale(0.65);
+  }
+  100% {
+    transform: translateX(-45vw) translateY(18vh) scale(0.28);
+  }
+}
+.firefly:nth-child(5) {
+  animation-name: move5;
+}
