@@ -36,8 +36,7 @@
         <p class="laptop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quos molestiae id quasi, voluptas quaerat vitae laudantium eveniet aliquam vel, sunt, error earum dolores. Iste aut natus porro velit vero?</p>
         <button id="ARworld" onclick="document.body.removeChild(this.parentNode)">Enter the AR world</button>
     </div>
-    <a-scene arjs embedded renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector precision: mediump id="scene">
-         
+    <a-scene arjs embedded renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector renderer="gammaOutput: true" id="scene" precision:mediump>
            <a-assets>
                      <a-asset-item id="headphone" src=./headphone/scene.gltf></a-asset-item>
            </a-assets>
@@ -51,21 +50,23 @@
          </a-assets>
 
        <a-marker preset='custom2' type='pattern' url='image-targets/nike.patt'>
-                <a-entity position="0 0 0" scale="1 1 1" animation="property: rotation; dur: 10000;
+                <a-entity position="0 0 0" scale="3 3 3" animation="property: rotation; dur: 10000;
                      to: 0 360 0; loop: false"  class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#football"></a-entity>
        </a-marker>
 
+
        <a-assets>
-                <a-asset-item id="adidas" src=./model/model.gltf></a-asset-item>
+                <a-asset-item id="reebok" src=./reebok/scene.gltf></a-asset-item>
        </a-assets>
 
-       <a-marker preset='custom3' type='pattern' url='image-targets/adidas.patt'>
-                <a-entity position="0 0 0" scale="0.7 0.7 0.7" animation="property: rotation; dur: 10000;
-                     to: 0 360 0; loop: false"  class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#adidas"></a-entity>
-       </a-marker>
+       <a-marker preset='custom3' type='pattern' url='image-targets/reebok.patt'> 
+                <a-entity position="0 0 0" scale="1 1 1" animation="property: rotation; dur: 10000;
+                     to: 0 360 0; loop: false"  class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#reebok"></a-entity>
+       </a-marker>  
+     
          
         <a-assets>
-                <a-asset-item id="iphone" src=./iphone/scene.gltf></a-asset-item>
+                <a-asset-item id="iphone" src=./iphone/iphone.glb></a-asset-item>
        </a-assets>
 
        <a-marker preset='custom4' type='pattern' url='image-targets/iphone.patt'>
