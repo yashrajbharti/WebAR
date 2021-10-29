@@ -1,3 +1,7 @@
+# Table of Contents
+1. **[Introduction](#Introduction)**
+2. **[Steps](#Steps)**  
+
 # ARify-the-malls
 
 * https://3sidedcube.com/ar-js-a-guide-to-developing-an-augmented-reality-web-app/  
