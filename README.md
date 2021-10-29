@@ -1,7 +1,10 @@
 # Table of Contents
 1. **[Introduction](#Introduction)**
 2. **[Steps](#Steps)**  
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**a. [Scan the QR code](#Scan-the-QR-code)**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**b. [Enter the AR World](#Enter-the-AR-World)**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**c. [On Marker detection](#On-Marker-detection)**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**d. [Payment Option](#Payment-Option)**  
 # ARify-the-malls
 
 * https://3sidedcube.com/ar-js-a-guide-to-developing-an-augmented-reality-web-app/  
