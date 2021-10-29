@@ -5,6 +5,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**b. [Enter the AR World](#Enter-the-AR-World)**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**c. [On Marker detection](#On-Marker-detection)**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**d. [Payment Option](#Payment-Option)**  
+3. **[Code](#Code)**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**a. [Marker Detection](#Marker-Detection)**   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**b. [Model Rotation](#Model-Rotation)**   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**c. [Model Scaling](#Model-Scaling)**  
 # ARify-the-malls
 
 * https://3sidedcube.com/ar-js-a-guide-to-developing-an-augmented-reality-web-app/  
