@@ -39,3 +39,35 @@
   animation-duration: 18s, 6361ms;
   animation-delay: 0ms, 2466ms;
 }
+
+@keyframes move1 {
+  0% {
+    transform: translateX(28vw) translateY(-24vh) scale(0.27);
+  }
+  4.347826087% {
+    transform: translateX(-2vw) translateY(-24vh) scale(0.74);
+  }
+  8.6956521739% {
+    transform: translateX(-13vw) translateY(5vh) scale(0.81);
+  }
+  13.0434782609% {
+    transform: translateX(-6vw) translateY(5vh) scale(0.79);
+  }
+  17.3913043478% {
+    transform: translateX(-33vw) translateY(-32vh) scale(0.47);
+  }
+  21.7391304348% {
+    transform: translateX(-24vw) translateY(-33vh) scale(0.35);
+  }
+  26.0869565217% {
+    transform: translateX(12vw) translateY(7vh) scale(0.67);
+  }
+  30.4347826087% {
+    transform: translateX(10vw) translateY(-7vh) scale(0.66);
+  }
+  34.7826086957% {
+    transform: translateX(33vw) translateY(21vh) scale(0.41);
+  }
+  39.1304347826% {
+    transform: translateX(-18vw) translateY(6vh) scale(0.62);
+  }
