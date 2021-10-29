@@ -232,3 +232,4 @@ AFRAME.registerComponent("gesture-detector", {
     return numberNames[Math.min(touchCount, 4) - 1];
   }
 });
+}
