@@ -17,14 +17,18 @@
 				var markerId = marker.id;
 				console.log('markerFound', markerId);
                     
-                    	 document.querySelector('#football-animation').emit('footballAnimation');
 			 document.querySelector('#football-animation').emit('footballRotate');
+                         document.querySelector('#football-animation').emit('footballAnimation');
 
-			 document.querySelector('#reebok-animation').emit('reebokAnimation');
 			 document.querySelector('#reebok-animation').emit('reebokRotate');	
+			 document.querySelector('#reebok-animation').emit('reebokAnimation');
 				
-                    	 document.querySelector('#iphone-animation').emit('iphoneAnimation');
-			 document.querySelector('#iphone-animation').emit('iphoneRotate');
+                    	 document.querySelector('#iphone-animation').emit('iphoneRotate');
+			 document.querySelector('#iphone-animation').emit('iphoneAnimation');
+				
+			 document.querySelector('#text-animation1').emit('textAnimation1');	
+			 document.querySelector('#text-animation2').emit('textAnimation2');
+			 document.querySelector('#text-animation3').emit('textAnimation3');
                     
 			});
 
@@ -77,11 +81,12 @@
 
        <a-marker preset='custom1' type='pattern' url='image-targets/adidas.patt' emitevents='true' registerevents>
                <a-entity id="football-animation" position="0 0 0" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#football"
-			  animation__rotation="property: rotation; startEvents: footballAnimation; to: 0 360 0; dur: 5000; easing: easeInSine"
-			  animation__y-axis="property: position; startEvents: footballRotate; from: 0 -5 0; to: 0 0 0; dur: 5000; easing: easeInSine">
+			  animation__rotation="property: rotation; begin: footballRotate; to: 0 360 0; dur: 5000; easing: easeInOutQuint"
+			  animation__y-axis="property: position; begin: footballAnimation; from: 0 -5 0; to: 0 0 0; dur: 5000; easing: easeInOutQuint">
                </a-entity>
             
-               <a-text value="Tap to Purchase" font="fonts/audiowide/Audiowide-Regular.json" shader="msdf" color="white" rotation="0 0 0" position="0 -1.5 -0.6" align="center" scale="0.8 0.8 0.8" zOffset="5" text>
+               <a-text id="text-animation1" value="Tap to Purchase" font="fonts/audiowide/Audiowide-Regular.json" shader="msdf" color="white" rotation="0 0 0" position="0 -1.5 -0.6" align="center" scale="0.8 0.8 0.8" zOffset="5" text 
+		       	  animation__y-axis="property: position; begin: textAnimation1; from: 0 5 -0.6; to: 0 -1.5 -0.6; dur: 5000; easing: easeOutSine">
                </a-text>
        </a-marker>
          
@@ -92,11 +97,12 @@
 
        <a-marker preset='custom2' type='pattern' url='image-targets/reebok.patt' emitevents='true' registerevents> 
                <a-entity id="reebok-animation" position="0 -0.4 0" scale="0.1 0.1 0.1" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#reebok"
-			  animation__rotation="property: rotation; startEvents: reebokAnimation; to: 0 360 0; dur: 5000; easing: easeInSine"
-			  animation__y-axis="property: position; startEvents: reebokRotate; from: 0 -5 0; to: 0 -0.4 0; dur: 5000; easing: easeInSine">
+			  animation__rotation="property: rotation; begin: reebokRotate; to: 0 360 0; dur: 5000; easing: easeInOutQuint"
+			  animation__y-axis="property: position; begin: reebokAnimation; from: 0 -5 0; to: 0 -0.4 0; dur: 5000; easing: easeInOutQuint">
 	       </a-entity>
              
-               <a-text value="Tap to Purchase" font="fonts/audiowide/Audiowide-Regular.json" shader="msdf" color="white" rotation="0 0 0" position="0 -1.5 -0.6" align="center" scale="0.8 0.8 0.8" zOffset="5" text>
+               <a-text id="text-animation2" value="Tap to Purchase" font="fonts/audiowide/Audiowide-Regular.json" shader="msdf" color="white" rotation="0 0 0" position="0 -1.5 -0.6" align="center" scale="0.8 0.8 0.8" zOffset="5" text 
+		       	  animation__y-axis="property: position; begin: textAnimation2; from: 0 5 -0.6; to: 0 -1.5 -0.6; dur: 5000; easing: easeOutSine">
                </a-text>
        </a-marker>  
      
@@ -107,11 +113,12 @@
             
        <a-marker preset='custom3' type='pattern' url='image-targets/iphone.patt' emitevents='true' registerevents> 
                <a-entity rotation="0 90 0"><a-entity id="iphone-animation" position="0.1 0 0" scale="1 1 1" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#iphone"
-			  animation__rotation="property: rotation; startEvents: iphoneAnimation; to: 0 360 0; dur: 5000; easing: easeInSine"
-			  animation__y-axis="property: position; startEvents: iphoneRotate; from: 0.1 -5 0; to: 0.1 0 0; dur: 5000; easing: easeInSine" >
+			  animation__rotation="property: rotation; begin: iphoneRotate; to: 0 360 0; dur: 5000; easing: easeInOutQuint"
+			  animation__y-axis="property: position; begin: iphoneAnimation; from: 0.1 -5 0; to: 0.1 0 0; dur: 5000; easing: easeInOutQuint" >
                </a-entity></a-entity>
            
-               <a-text value="Tap to Purchase" font="fonts/audiowide/Audiowide-Regular.json" shader="msdf" color="white" rotation="0 0 0" position="0 -1.9 -0.6" align="center" scale="0.8 0.8 0.8" zOffset="5" text>
+               <a-text id="text-animation3" value="Tap to Purchase" font="fonts/audiowide/Audiowide-Regular.json" shader="msdf" color="white" rotation="0 0 0" position="0 -1.9 -0.6" align="center" scale="0.8 0.8 0.8" zOffset="5" text
+		          animation__y-axis="property: position; begin: textAnimation3; from: 0 5 -0.6; to: 0 -1.9 -0.6; dur: 5000; easing: easeOutSine">
                </a-text>
        </a-marker>
              
