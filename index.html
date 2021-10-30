@@ -16,30 +16,55 @@
 			marker.addEventListener('markerFound', function() {
 				var markerId = marker.id;
 				console.log('markerFound', markerId);
+			 if(markerId == "fifamarker")
+			 {
+				document.getElementById("buy1").style.display = "block";
+				document.getElementById("buy2").style.display = "none";
+				document.getElementById("buy3").style.display = "none";
+			 }
+			if(markerId == "reebokmarker")
+			 {
+				document.getElementById("buy1").style.display = "none";
+				document.getElementById("buy2").style.display = "block";
+				document.getElementById("buy3").style.display = "none";
+			 }
+			if(markerId == "iphonemarker")
+			 {
+				document.getElementById("buy1").style.display = "none";
+				document.getElementById("buy2").style.display = "none";
+				document.getElementById("buy3").style.display = "block";
+			 }
                     
-// 			 document.querySelector('#football-animation').emit('footballRotate');
+  			 document.querySelector('#football-animation').emit('footballRotate');
 //                       document.querySelector('#football-animation').emit('footballAnimation');
 
-// 			 document.querySelector('#reebok-animation').emit('reebokRotate');	
+  			 document.querySelector('#reebok-animation').emit('reebokRotate');	
 // 			 document.querySelector('#reebok-animation').emit('reebokAnimation');
 				
-//                     	 document.querySelector('#iphone-animation').emit('iphoneRotate');
+                     	 document.querySelector('#iphone-animation').emit('iphoneRotate');
 // 			 document.querySelector('#iphone-animation').emit('iphoneAnimation');
-// 		         commented out model animations to cope up with the lag				
+ 
 			 document.querySelector('#text-animation1').emit('textAnimation1');	
 			 document.querySelector('#text-animation2').emit('textAnimation2');
 			 document.querySelector('#text-animation3').emit('textAnimation3');
-                    
+                    		
+				
 			});
+			
+			
+		
 
 			marker.addEventListener('markerLost', function() {
 				var markerId = marker.id;
 				console.log('markerLost', markerId);
-				// TODO: Add your own code here to react to the marker being lost.
+				document.getElementById("buy1").style.display = "none";
+				document.getElementById("buy2").style.display = "none";
+				document.getElementById("buy3").style.display = "none";
+				
 			});
 		}
 	});
-	     
+			
 	
      </script>
   <body>
@@ -47,6 +72,11 @@
     <div id="splash">
          <div class="loading"></div>
     </div>
+	  
+    <div id="buy1"> <button id="ARworld1">One Tap Payment</button></div>
+    <div id="buy2"> <button id="ARworld2">Purchase Sneakers</button></div>
+    <div id="buy3"> <button id="ARworld3">Purchase iPhone</button></div>
+	  
     <div id="landing">
       <div class="firefly"></div>
       <div class="firefly"></div>
@@ -72,7 +102,8 @@
         <p class="laptop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem hic expedita iusto delectus unde porro eius. Commodi, adipisci magni ducimus rem, aspernatur velit quaerat. Amet, sed necessitatibus similique numquam ipsa.</p>
         <p class="laptop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quos molestiae id quasi, voluptas quaerat vitae laudantium eveniet aliquam vel, sunt, error earum dolores. Iste aut natus porro velit vero?</p>
         <button id="ARworld" onclick="document.body.removeChild(this.parentNode)">Enter the AR world</button>
-    </div>
+    </div>  
+	  	  
     <a-scene arjs="debugUIEnabled: false" embedded renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector renderer="gammaOutput: true" id="scene">
          
          <a-assets>
@@ -80,15 +111,16 @@
 	      <a-asset-item id="projector" src=./3d_projector/scene.gltf></a-asset-item>
          </a-assets>
 
-       <a-marker preset='custom1' type='pattern' url='image-targets/fifa.patt' emitevents='true' registerevents>
+       <a-marker id="fifamarker" preset='custom1' type='pattern' url='image-targets/fifa.patt' emitevents='true' registerevents>
                <a-entity id="football-animation" position="0 0 0" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#football"
-			  animation__rotation="property: rotation; begin: footballRotate; to: 0 360 0; dur: 5000; easing: easeInOutQuint"
+			  animation__rotation="property: rotation; startEvents: footballRotate; to: 0 360 0; dur: 5000; easing: easeInOutQuint"
 			  animation__y-axis="property: position; begin: footballAnimation; from: 0 -5 0; to: 0 0 0; dur: 5000; easing: easeInOutQuint">
                </a-entity>
                <a-entity gltf-model="#projector" position="0 -3 -1" scale="0.1 0.1 0.1" animation-mixer></a-entity>
                <a-text id="text-animation1" value="adidas" font="fonts/audiowide/Audiowide-Regular.json" shader="msdf" color="white" rotation="0 0 0" position="0 -1.5 -0.6" align="center" scale="1.8 1.8 1.8" zOffset="5" text 
-		       	  animation__y-axis="property: position; startEvents: textAnimation1; from: 0 5 -0.6; to: 0 -1.5 -0.6; dur: 5000; easing: easeOutSine">
+		       	  animation__y-axis="property: position; startEvents: textAnimation1; from: 0 5 -0.6; to: 0 -1.5 -0.6; dur: 5000; easing: easeInOutQuint">
                </a-text>
+	 
        </a-marker>
          
 
@@ -96,14 +128,14 @@
                 <a-asset-item id="reebok" src=./reebok/scene.gltf></a-asset-item>
        </a-assets>
 
-       <a-marker preset='custom2' type='pattern' url='image-targets/reebok.patt' emitevents='true' registerevents> 
+       <a-marker id="reebokmarker" preset='custom2' type='pattern' url='image-targets/reebok.patt' emitevents='true' registerevents> 
                <a-entity id="reebok-animation" position="0 -0.4 0" scale="0.1 0.1 0.1" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#reebok"
-			  animation__rotation="property: rotation; begin: reebokRotate; to: 0 360 0; dur: 5000; easing: easeInOutQuint"
+			  animation__rotation="property: rotation; startEvents: reebokRotate; to: 0 360 0; dur: 5000; easing: easeInOutQuint"
 			  animation__y-axis="property: position; begin: reebokAnimation; from: 0 -5 0; to: 0 -0.4 0; dur: 5000; easing: easeInOutQuint">
 	       </a-entity>
                <a-entity gltf-model="#projector" position="0 -3 -1" scale="0.1 0.1 0.1" animation-mixer></a-entity>
                <a-text id="text-animation2" value="reebok" font="fonts/audiowide/Audiowide-Regular.json" shader="msdf" color="white" rotation="0 0 0" position="0 -1.5 -0.6" align="center" scale="1.8 1.8 1.8" zOffset="5" text 
-		       	  animation__y-axis="property: position; startEvents: textAnimation2; from: 0 5 -0.6; to: 0 -1.5 -0.6; dur: 5000; easing: easeOutSine">
+		       	  animation__y-axis="property: position; startEvents: textAnimation2; from: 0 5 -0.6; to: 0 -1.5 -0.6; dur: 5000; easing: easeInOutQuint">
                </a-text>
        </a-marker>  
      
@@ -112,14 +144,14 @@
                <a-asset-item id="iphone" src=./iphone_13/scene.gltf></a-asset-item>
        </a-assets>
             
-       <a-marker preset='custom3' type='pattern' url='image-targets/iphone.patt' emitevents='true' registerevents> 
+       <a-marker id="iphonemarker" preset='custom3' type='pattern' url='image-targets/iphone.patt' emitevents='true' registerevents> 
                <a-entity rotation="0 90 0"><a-entity id="iphone-animation" position="0.1 0 0" scale="1 1 1" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#iphone"
-			  animation__rotation="property: rotation; begin: iphoneRotate; to: 0 360 0; dur: 5000; easing: easeInOutQuint"
+			  animation__rotation="property: rotation; startEvents: iphoneRotate; to: 0 360 0; dur: 5000; easing: easeInOutQuint"
 			  animation__y-axis="property: position; begin: iphoneAnimation; from: 0.1 -5 0; to: 0.1 0 0; dur: 5000; easing: easeInOutQuint" >
                </a-entity></a-entity>
                <a-entity gltf-model="#projector" position="0 -3 -1" scale="0.1 0.1 0.1" animation-mixer></a-entity>
                <a-text id="text-animation3" value="apple" font="fonts/audiowide/Audiowide-Regular.json" shader="msdf" color="white" rotation="0 0 0" position="0 -1.9 -0.6" align="center" scale="1.8 1.8 1.8" zOffset="5" text
-		          animation__y-axis="property: position; startEvents: textAnimation3; from: 0 5 -0.6; to: 0 -1.9 -0.6; dur: 5000; easing: easeOutSine">
+		          animation__y-axis="property: position; startEvents: textAnimation3; from: 0 5 -0.6; to: 0 -1.9 -0.6; dur: 5000; easing: easeInOutQuint">
                </a-text>
        </a-marker>
              
