@@ -109,7 +109,7 @@
         <button id="ARworld" onclick="document.body.removeChild(this.parentNode)">Enter the AR world</button>
     </div>  
 	  	  
-    <a-scene arjs="debugUIEnabled: false" embedded renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector renderer="gammaOutput: true" id="scene">
+    <a-scene arjs="debugUIEnabled: false" embedded renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector loading-screen="dotsColor: white; backgroundColor: black" renderer="gammaOutput: true" id="scene">
          
          <a-assets>
               <a-asset-item id="football" src=football/scene.gltf></a-asset-item>
