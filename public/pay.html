@@ -100,7 +100,33 @@
         border: 1px solid rgba(255, 255, 255, 0.18);
       }
       </style>
+
     
+    <script type="text/javascript">
+        var url = document.URL;
+        var id = url.substring(url.lastIndexOf('/') + 1);
+    if(id == "#reebok")
+      {
+        document.getElementById("reebok").style.display = "block";
+				document.getElementById("sneakers").style.display = "none";
+				document.getElementById("iphone").style.display = "none";
+      }
+    if(id == "#sneakers")
+      {
+        document.getElementById("reebok").style.display = "none";
+				document.getElementById("sneakers").style.display = "block";
+				document.getElementById("iphone").style.display = "none";
+        }
+    if(id == "#iphone")
+        {
+        document.getElementById("reebok").style.display = "none";
+				document.getElementById("sneakers").style.display = "none";
+				document.getElementById("iphone").style.display = "block";      
+        }
+    </script>
+    
+    
+
        <section>
         <!-- empty section  -->
           </section>
