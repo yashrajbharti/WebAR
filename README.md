@@ -114,7 +114,6 @@ handleScale(event) {
 
 **AR**ifying the shops and malls with our solution will work as a catalyst to lure the customers into loading up an AR on their phone and interact with it and make them more interested in the purchase. Also, we don't want the buyers to keep searching over a catalog in AR then adding to buy finally. That would become like an online shopping site but in AR. We want to reduce the UI to give them a one-tap buying solution, so the AR guides the whole workflow for the purchase with a clever UX.
   
-![](https://i.ibb.co/37hqBth/pngaaa-com-1761516.png)
 - - -
 # Contributing
 
@@ -135,4 +134,6 @@ npm start
 * **Commit** changes to your own branch
 * **Push** your work and create a pull request
 
-NOTE: Be sure to merge the latest from "upstream"!!
+NOTE: Be sure to merge the latest from "upstream"!!  
+    
+![](https://i.ibb.co/37hqBth/pngaaa-com-1761516.png)
