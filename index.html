@@ -5,11 +5,14 @@
      <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
      <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
      <script src="gesture.js"></script>
+     <script src="script.js"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
      <link rel="stylesheet" href="particles.css">
-
-     
   <body>
+       
+    <div id="splash">
+         <div class="loading"></div>
+    </div>
     <div id="landing">
       <div class="firefly"></div>
       <div class="firefly"></div>
@@ -37,22 +40,15 @@
         <button id="ARworld" onclick="document.body.removeChild(this.parentNode)">Enter the AR world</button>
     </div>
     <a-scene arjs embedded renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector renderer="gammaOutput: true" id="scene" precision:mediump>
-           <a-assets>
-                     <a-asset-item id="headphones" src=./headphones/scene.gltf></a-asset-item>
-           </a-assets>
-     
-          <a-marker preset='custom' type='pattern' url='image-targets/skullcandy.patt'>
-
-                    <a-entity position="0 0 0" rotation="90 0 0" scale="0.8 0.8 0.8" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#headphones"></a-entity>
-           </a-marker>
+         
 
          <a-assets>
               <a-asset-item id="football" src=./football/scene.gltf></a-asset-item>
          </a-assets>
 
-       <a-marker preset='custom2' type='pattern' url='image-targets/nike.patt'>
-                <a-entity position="0 0 0" scale="3 3 3" animation="property: rotation; dur: 10000;
-                     to: 0 360 0; loop: false"  class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#football"></a-entity>
+       <a-marker preset='custom1' type='pattern' url='image-targets/nike.patt'>
+                <a-entity scale="1 1 1">  <a-entity position="0 0 0"  animation="property: rotation; dur: 10000;
+                     to: 0 360 0; loop: false"  class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#football"></a-entity></a-entity>
        </a-marker>
 
 
@@ -60,9 +56,8 @@
                 <a-asset-item id="reebok" src=./reebok/scene.gltf></a-asset-item>
        </a-assets>
 
-       <a-marker preset='custom3' type='pattern' url='image-targets/reebok.patt'> 
-                <a-entity position="0 0 0" scale="1 1 1" animation="property: rotation; dur: 10000;
-                     to: 0 360 0; loop: false"  class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#reebok"></a-entity>
+       <a-marker preset='custom2' type='pattern' url='image-targets/reebok.patt'> 
+                <a-entity scale="0.09 0.09 0.09"><a-entity position="0 0 0" scale="1 1 1" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#reebok"></a-entity></a-entity>
        </a-marker>  
      
          
@@ -70,10 +65,12 @@
                 <a-asset-item id="iphone" src=./iphone_13/scene.gltf></a-asset-item>
        </a-assets>
 
-       <a-marker preset='custom4' type='pattern' url='image-targets/iphone.patt'>
-                <a-entity position="0 0 0" scale="1 1 1" rotation="0 -90 90" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#iphone"></a-entity>
+       <a-marker preset='custom3' type='pattern' url='image-targets/iphone.patt'>
+               <a-entity rotation="0 -270 270" position="-0.25 0 0"><a-entity position="0 0 0" scale="1 1 1" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#iphone"></a-entity> </a-entity>
        </a-marker>
-         
+             
+      
+  
       <a-entity camera></a-entity>
     </a-scene>
   </body>

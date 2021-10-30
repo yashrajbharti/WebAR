@@ -3,56 +3,71 @@
     {
       "bufferView": 2,
       "componentType": 5126,
-      "count": 10185,
+      "count": 59070,
       "max": [
-        3.1795289516448975,
-        -7.7906441688537598,
-        1.3303749561309814
+        10.247420310974121,
+        4.6148171424865723,
+        11.362464904785156
       ],
       "min": [
-        -3.2631890773773193,
-        -10.496040344238281,
-        -1.695294976234436
+        -14.907960891723633,
+        -4.7925910949707031,
+        0.0271148681640625
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 2,
-      "byteOffset": 122220,
+      "byteOffset": 708840,
       "componentType": 5126,
-      "count": 10185,
+      "count": 59070,
       "max": [
-        0.999950110912323,
-        0.99998849630355835,
-        0.99998646974563599
+        0.99995797872543335,
+        0.99999916553497314,
+        0.99978077411651611
       ],
       "min": [
-        -0.99994385242462158,
-        -0.99961036443710327,
-        -0.99963551759719849
+        -0.99973082542419434,
+        -0.99998617172241211,
+        -0.99999940395355225
       ],
       "type": "VEC3"
     },
     {
       "bufferView": 1,
       "componentType": 5126,
-      "count": 10185,
+      "count": 59070,
       "max": [
-        1,
-        1
+        0.97042566537857056,
+        0.97999995946884155
       ],
       "min": [
-        0,
-        0
+        0.019999999552965164,
+        0.019999999552965164
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 472560,
+      "componentType": 5126,
+      "count": 59070,
+      "max": [
+        0.97042566537857056,
+        0.97999995946884155
+      ],
+      "min": [
+        0.019999999552965164,
+        0.019999999552965164
       ],
       "type": "VEC2"
     },
     {
       "bufferView": 0,
       "componentType": 5125,
-      "count": 59988,
+      "count": 346503,
       "max": [
-        10184
+        59069
       ],
       "min": [
         0
@@ -62,34 +77,34 @@
   ],
   "asset": {
     "extras": {
-      "author": "Przemek Gesicki - DigitWorlds (https://sketchfab.com/lunar11)",
-      "license": "CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)",
-      "source": "https://sketchfab.com/3d-models/reebok-shoe-by-digitworldscom-70d77395535746ed87240c9127945325",
-      "title": "Reebok Shoe by DigitWorlds.com"
+      "author": "Yaroslav Karas (https://sketchfab.com/yakaras)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/reebok-shoe-sneaker-free-6042394721854e3cb375002f44d2de5a",
+      "title": "Reebok shoe sneaker — FREE"
     },
-    "generator": "Sketchfab-9.39.0",
+    "generator": "Sketchfab-9.4.0",
     "version": "2.0"
   },
   "bufferViews": [
     {
       "buffer": 0,
-      "byteLength": 239952,
+      "byteLength": 1386012,
       "byteOffset": 0,
       "name": "floatBufferViews",
       "target": 34963
     },
     {
       "buffer": 0,
-      "byteLength": 81480,
-      "byteOffset": 239952,
+      "byteLength": 945120,
+      "byteOffset": 1386012,
       "byteStride": 8,
       "name": "floatBufferViews",
       "target": 34962
     },
     {
       "buffer": 0,
-      "byteLength": 244440,
-      "byteOffset": 321432,
+      "byteLength": 1417680,
+      "byteOffset": 2331132,
       "byteStride": 12,
       "name": "floatBufferViews",
       "target": 34962
@@ -97,7 +112,7 @@
   ],
   "buffers": [
     {
-      "byteLength": 565872,
+      "byteLength": 3748812,
       "uri": "scene.bin"
     }
   ],
@@ -106,7 +121,7 @@
   ],
   "images": [
     {
-      "uri": "textures/test_baseColor.jpeg"
+      "uri": "textures/material0_baseColor.jpeg"
     }
   ],
   "materials": [
@@ -115,7 +130,7 @@
       "extensions": {
         "KHR_materials_unlit": {}
       },
-      "name": "test",
+      "name": "material0",
       "pbrMetallicRoughness": {
         "baseColorFactor": [
           1,
@@ -134,14 +149,16 @@
   ],
   "meshes": [
     {
+      "name": "Reebok_material0_0",
       "primitives": [
         {
           "attributes": {
             "NORMAL": 1,
             "POSITION": 0,
-            "TEXCOORD_0": 2
+            "TEXCOORD_0": 2,
+            "TEXCOORD_1": 3
           },
-          "indices": 3,
+          "indices": 4,
           "material": 0,
           "mode": 4
         }
@@ -165,35 +182,65 @@
       "children": [
         2
       ],
-      "matrix": [
-        0.99946153163909912,
-        -0.0060744080692529678,
-        -0.032244965434074402,
-        0,
-        -0.015153153799474239,
-        -0.95709270238876343,
-        -0.28938540816307068,
-        0,
-        -0.029103575274348259,
-        0.28971821069717407,
-        -0.9566693902015686,
-        0,
-        -0.14388245344161987,
-        -17.841682434082031,
-        -3.0042901039123535,
-        1
-      ],
       "name": "RootNode (model correction matrix)"
     },
     {
       "children": [
         3
       ],
-      "name": "__test.obj.cleaner.materialmerger.gles"
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Reebok.fbx"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.2204460492503131e-16,
+        -1,
+        0,
+        0,
+        1,
+        2.2204460492503131e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Reebok"
     },
     {
       "mesh": 0,
-      "name": ""
+      "name": "Reebok_material0_0"
     }
   ],
   "samplers": [
