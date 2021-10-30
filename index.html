@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="css/style.css">
      <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/ar.js/2.1.1/aframe-ar.min.js"></script>
      <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
-     <script src="gesture.js"></script>
-     <script src="script.js"></script>
+     <script src="js/gesture.js"></script>
+     <script src="js/script.js"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-     <link rel="stylesheet" href="particles.css">
+     <link rel="stylesheet" href="css/particles.css">
      <script>
           AFRAME.registerComponent('registerevents', {
 		init: function () {
@@ -76,6 +76,7 @@
     <div id="buy1"> <button id="ARworld1" onclick="window.location.href='pay.html#reebok'" target="_blank">One Tap Payment</button></div>
     <div id="buy2"> <button id="ARworld2" onclick="window.location.href='pay.html#sneakers'" target="_blank">Purchase Sneakers</button></div>
     <div id="buy3"> <button id="ARworld3" onclick="window.location.href='pay.html#iphone'" target="_blank">Purchase iPhone</button></div>
+
 	  
     <div id="landing">
       <div class="firefly"></div>
@@ -93,10 +94,10 @@
       <div class="firefly"></div>
       <div class="firefly"></div>
       <div class="firefly"></div>
-      <img id="oneimg" src="./Images%20and%20QR%20codes/design.png" alt="" height="100px">
-      <img id="twoimg" src="./Images%20and%20QR%20codes/design.png" alt="" height="100px">
-      <img id="threeimg" src="./Images%20and%20QR%20codes/design.png" alt="" height="100px">
-      <img id="fourimg" src="./Images%20and%20QR%20codes/design.png" alt="" height="100px">
+      <img id="oneimg" src="Images%20and%20QR%20codes/design.png" alt="" height="100px">
+      <img id="twoimg" src="Images%20and%20QR%20codes/design.png" alt="" height="100px">
+      <img id="threeimg" src="Images%20and%20QR%20codes/design.png" alt="" height="100px">
+      <img id="fourimg" src="Images%20and%20QR%20codes/design.png" alt="" height="100px">
       <h1>Expect the Unreal <br><span>with WebAR</span></h1>
         <p>"Using WebAR, we bring you point-of-sale information with geospatial or visual triggers in the environment, so jump in and look for markers around to initiate the whole new experience of limitless possibilities."</p>
 	<p class="laptop">Built using AR.js, we aim at developing an Augmented Reality Experience  where collection of technologies used to blend computer generated information with the viewer’s natural senses.</p>
@@ -107,8 +108,8 @@
     <a-scene arjs="debugUIEnabled: false" embedded renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector renderer="gammaOutput: true" id="scene">
          
          <a-assets>
-              <a-asset-item id="football" src=./football/scene.gltf></a-asset-item>
-	      <a-asset-item id="projector" src=./3d_projector/scene.gltf></a-asset-item>
+              <a-asset-item id="football" src=football/scene.gltf></a-asset-item>
+	      <a-asset-item id="projector" src=3d_projector/scene.gltf></a-asset-item>
          </a-assets>
 
        <a-marker id="fifamarker" preset='custom1' type='pattern' url='image-targets/fifa.patt' emitevents='true' registerevents>
@@ -125,7 +126,7 @@
          
 
        <a-assets>
-                <a-asset-item id="reebok" src=./reebok/scene.gltf></a-asset-item>
+                <a-asset-item id="reebok" src=reebok/scene.gltf></a-asset-item>
        </a-assets>
 
        <a-marker id="reebokmarker" preset='custom2' type='pattern' url='image-targets/reebok.patt' emitevents='true' registerevents> 
@@ -141,7 +142,7 @@
      
          
        <a-assets>
-               <a-asset-item id="iphone" src=./iphone_13/scene.gltf></a-asset-item>
+               <a-asset-item id="iphone" src=iphone_13/scene.gltf></a-asset-item>
        </a-assets>
             
        <a-marker id="iphonemarker" preset='custom3' type='pattern' url='image-targets/iphone.patt' emitevents='true' registerevents> 
