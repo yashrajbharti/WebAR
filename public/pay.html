@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/particles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>WebAR | Paytm-Nodejs</title>
   </head>
   <body >
@@ -47,7 +48,7 @@
         -webkit-backdrop-filter: blur(12.5px);
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.18);
-/*         transform: translateY(200px); */
+        transform: translateY(200px);
       }
   
       .button {
@@ -100,10 +101,11 @@
         border: 1px solid rgba(255, 255, 255, 0.18);
       }
       </style>
-      <script>document.addEventListener("DOMContentLoaded", () => {
-      let w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-      let h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-        $("html, body").css({"width":w,"height":h});
+      <script>
+          $(function() {
+    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    $("html, body").css({"width":w,"height":h});
     });
     </script>
        <section>
