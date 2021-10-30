@@ -100,9 +100,28 @@
         border: 1px solid rgba(255, 255, 255, 0.18);
       }
       </style>
-       <section  >
+    
+       <section>
         <!-- empty section  -->
           </section>
+    <script>
+      if(this.getAttribute('id')=="reebok")
+      {
+        document.getElementById("iphone").style.display = "none";
+				document.getElementById("sneakers").style.display = "none";
+      }
+      if(this.getAttribute('id')=="sneakers")
+      {
+        document.getElementById("iphone").style.display = "none";
+				document.getElementById("reebok").style.display = "none";
+      }
+      if(this.getAttribute('id')=="iphone")
+      {
+        document.getElementById("reebok").style.display = "none";
+				document.getElementById("sneakers").style.display = "none";
+      }
+      </script>
+    
           <section id = "reebok">
        
             <div class="row my-5">
