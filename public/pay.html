@@ -75,8 +75,9 @@
   
       section {
         margin: 0 40px 0 40px;
-/*         width: 100vw; */
+/*      width: 100vw; */
         height: 100vh;
+	position: absolute;
       }
  
       table, td {
@@ -105,19 +106,19 @@
     <script type="text/javascript">
         var url = document.URL;
         var id = url.substring(url.lastIndexOf('/') + 1);
-    if(id == "#reebok")
+    if(id == "pay.html#reebok")
       {
         document.getElementById("reebok").style.display = "block";
 				document.getElementById("sneakers").style.display = "none";
 				document.getElementById("iphone").style.display = "none";
       }
-    if(id == "#sneakers")
+    if(id == "pay.html#sneakers")
       {
         document.getElementById("reebok").style.display = "none";
 				document.getElementById("sneakers").style.display = "block";
 				document.getElementById("iphone").style.display = "none";
         }
-    if(id == "#iphone")
+    if(id == "pay.html#iphone")
         {
         document.getElementById("reebok").style.display = "none";
 				document.getElementById("sneakers").style.display = "none";
