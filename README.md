@@ -1,4 +1,4 @@
-# WebAR
+# ARify-the-malls
 
 * https://3sidedcube.com/ar-js-a-guide-to-developing-an-augmented-reality-web-app/  
 * https://ar-js-org.github.io/AR.js-Docs/   
