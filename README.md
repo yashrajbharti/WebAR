@@ -1,21 +1,3 @@
-# Table of Contents
-1. **[Introduction](#Introduction)**
-2. **[Steps](#Steps)**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**a. [Scan the QR code](#Scan-the-QR-code)**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**b. [Enter the AR World](#Enter-the-AR-World)**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**c. [On Marker detection](#On-Marker-detection)**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**d. [Payment Option](#Payment-Option)**  
-3. **[Code](#Code)**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**a. [Marker Detection](#Marker-Detection)**   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**b. [Model Rotation](#Model-Rotation)**   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**c. [Model Scaling](#Model-Scaling)**  
-4. **[FAQs](#FAQs)**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**a. [Why AR.js?](#Why-ARjs)**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**b. [What next?](#What-next)** 
-5. **[Wrapping up](#Wrapping-up)**  
-  
-- - -
-
 # ARify-the-malls
 
 * https://3sidedcube.com/ar-js-a-guide-to-developing-an-augmented-reality-web-app/  
@@ -29,5 +11,3 @@
 * https://github.com/jeromeetienne/AR.js/blob/master/aframe/examples/multiple-independent-markers.html
 * https://poplar.studio/blog/augmented-reality-nfts/  
 * https://dressx.com/
-* https://github.com/supermedium/superframe/tree/master/components/animation-timeline
-* https://www.npmjs.com/package/aframe-animation-component
