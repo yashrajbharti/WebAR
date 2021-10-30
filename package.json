@@ -1,0 +1,23 @@
+{
+  "name": "webar",
+  "version": "1.0.0",
+  "description": "1. **[Introduction](#Introduction)** 2. **[Steps](#Steps)**   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**a. [Scan the QR code](#Scan-the-QR-code)**   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**b. [Enter the AR World](#Enter-the-AR-World)**   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**c. [On Marker detection](#On-Marker-detection)**   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**d. [Payment Option](#Payment-Option)**   3. **[Code](#Code)**   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**a. [Marker Detection](#Marker-Detection)**    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**b. [Model Rotation](#Model-Rotation)**    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**c. [Model Scaling](#Model-Scaling)**    4. **[FAQs](#FAQs)**   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**a. [Why AR.js?](#Why-ARjs)**   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**b. [What next?](#What-next)**   5. **[Wrapping up](#Wrapping-up)**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashrajbharti/WebAR.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashrajbharti/WebAR/issues"
+  },
+  "homepage": "https://github.com/yashrajbharti/WebAR#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
