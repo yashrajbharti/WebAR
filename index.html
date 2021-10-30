@@ -3,9 +3,12 @@
      <link rel="stylesheet" href="style.css">
      <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
      <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+     <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
      <script src="gesture.js"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
      <link rel="stylesheet" href="particles.css">
+
+     
   <body>
     <div id="landing">
       <div class="firefly"></div>
@@ -33,28 +36,44 @@
         <p class="laptop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quos molestiae id quasi, voluptas quaerat vitae laudantium eveniet aliquam vel, sunt, error earum dolores. Iste aut natus porro velit vero?</p>
         <button id="ARworld" onclick="document.body.removeChild(this.parentNode)">Enter the AR world</button>
     </div>
-    <a-scene arjs embedded renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector id="scene">
-      <a-assets>
-           <a-asset-item id="headphone" src=./headphone/Headphones_01.gltf></a-asset-item>
+    <a-scene arjs embedded renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector renderer="gammaOutput: true" id="scene" precision:mediump>
+           <a-assets>
+                     <a-asset-item id="headphones" src=./headphones/scene.gltf></a-asset-item>
+           </a-assets>
+     
+          <a-marker preset='custom' type='pattern' url='image-targets/skullcandy.patt'>
 
-      </a-assets>
-
-           <a-marker preset='custom' type='pattern' url='image-targets/jbl.patt'>
-
-                    <a-entity position="0 0 0" rotation="90 05 180" scale="0.2 0.2 0.2" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#headphone"></a-entity>
-
-          </a-marker>
+                    <a-entity position="0 0 0" rotation="90 0 0" scale="0.8 0.8 0.8" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#headphones"></a-entity>
+           </a-marker>
 
          <a-assets>
-               <a-asset-item id="model" src=./model/model.gltf></a-asset-item>
+              <a-asset-item id="football" src=./football/scene.gltf></a-asset-item>
          </a-assets>
 
        <a-marker preset='custom2' type='pattern' url='image-targets/nike.patt'>
+                <a-entity position="0 0 0" scale="3 3 3" animation="property: rotation; dur: 10000;
+                     to: 0 360 0; loop: false"  class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#football"></a-entity>
+       </a-marker>
 
-                <a-entity position="0 0 0" scale="0.7 0.7 0.7" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#model"></a-entity>
 
-      </a-marker>
+       <a-assets>
+                <a-asset-item id="reebok" src=./reebok/scene.gltf></a-asset-item>
+       </a-assets>
 
+       <a-marker preset='custom3' type='pattern' url='image-targets/reebok.patt'> 
+                <a-entity position="0 0 0" scale="1 1 1" animation="property: rotation; dur: 10000;
+                     to: 0 360 0; loop: false"  class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#reebok"></a-entity>
+       </a-marker>  
+     
+         
+        <a-assets>
+                <a-asset-item id="iphone" src=./iphone_13/scene.gltf></a-asset-item>
+       </a-assets>
+
+       <a-marker preset='custom4' type='pattern' url='image-targets/iphone.patt'>
+                <a-entity position="0 0 0" scale="1 1 1" rotation="0 -90 90" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#iphone"></a-entity>
+       </a-marker>
+         
       <a-entity camera></a-entity>
     </a-scene>
   </body>

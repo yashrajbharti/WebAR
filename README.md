@@ -11,3 +11,14 @@
 * https://github.com/jeromeetienne/AR.js/blob/master/aframe/examples/multiple-independent-markers.html
 * https://poplar.studio/blog/augmented-reality-nfts/  
 * https://dressx.com/
+* https://github.com/supermedium/superframe/tree/master/components/animation-timeline
+* https://www.npmjs.com/package/aframe-animation-component
+* https://jgbarah.github.io/aframe-playground/moving-01/
+* https://stackoverflow.com/questions/61239107/how-to-get-marker-position-x-y-ar-js
+* https://github.com/n5ro/aframe-extras/issues/180
+
+
+![](./Images%20and%20QR%20codes/iphone.png)
+![](./Images%20and%20QR%20codes/nike.png)
+![](./Images%20and%20QR%20codes/reebok.png)
+![](./Images%20and%20QR%20codes/skullcandy.png)
