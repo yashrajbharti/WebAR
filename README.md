@@ -13,7 +13,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**a. [Why AR.js?](#Why-ARjs)**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**b. [What next?](#What-next)**  
 5. **[Wrapping up](#Wrapping-up)**  
-  
+6. **[Contributing](#Contributing)** 
 - - -
 
 # Introduction
@@ -116,3 +116,23 @@ handleScale(event) {
   
 ![](https://i.ibb.co/37hqBth/pngaaa-com-1761516.png)
 - - -
+# Contributing
+
+* **Fork** the repo on GitHub
+* **Clone** the project to your own machine
+
+To run it locally on your machine run the following command
+```
+npm init 
+```
+```
+npm i -s express
+```
+```
+npm start
+```
+ Open http://localhost:3000/ 
+* **Commit** changes to your own branch
+* **Push** your work and create a pull request
+
+NOTE: Be sure to merge the latest from "upstream"!!
