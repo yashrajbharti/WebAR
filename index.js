@@ -1,4 +1,5 @@
 const express = require("express");
+const path  = require('path');
 
 const https = require("https");
 const qs = require("querystring");
@@ -11,10 +12,15 @@ const app = express();
 const parseUrl = express.urlencoded({ extended: false });
 const parseJson = express.json({ extended: false });
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
 
+app.use(express.static(__dirname+'/public'));
+app.get('/' , function(req , res){
+    res.sendFile(path.join(__dirname+'/index.html'));
+
+});
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/pay.html");
+  res.sendFile(__dirname + "/public/pay.html");
 });
 
 app.post("/paynow", [parseUrl, parseJson], (req, res) => {
@@ -37,7 +43,7 @@ if(!paymentDetails.amount || !paymentDetails.customerId || !paymentDetails.custo
     params['ORDER_ID'] = 'TEST_'  + new Date().getTime();
     params['CUST_ID'] = paymentDetails.customerId;
     params['TXN_AMOUNT'] = paymentDetails.amount;
-    params['CALLBACK_URL'] = 'http://localhost:4000/callback';
+    params['CALLBACK_URL'] = 'http://localhost:3000/callback';
     params['EMAIL'] = paymentDetails.customerEmail;
     params['MOBILE_NO'] = paymentDetails.customerPhone;
 
