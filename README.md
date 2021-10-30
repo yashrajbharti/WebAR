@@ -25,15 +25,15 @@ Built using [AR.js](https://github.com/AR-js-org/AR.js), we aim at developing an
 # Steps
 1. **Scan the QR code**: At a mall that supports cashless transactions, which is essential these days, the customer can interact and enjoy WebAR experiences that aim to advertise the products via WebAR and purchase them. To do so, the customer has first to scan the QR code, just as the one shown below.
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./Images%20and%20QR%20codes/main-qr-code.png" height="200px"></img> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./public/Images%20and%20QR%20codes/main-qr-code.png" height="200px"></img> 
   
 2. **Enter the AR World**: After one has scanned the QR code, they get redirected to our web app. One needs to give camera permissions, and then they are all set to watch for markers and have fun with AR.  
   
 3. **On Marker detection**: The markers can either be showcased inside the QR code or separately as shown below (showing full-size image, so you get a better demonstration if you're following along): 
     
-![](./Images%20and%20QR%20codes/fifa.png)
-![](./Images%20and%20QR%20codes/reebok.png)
-![](./Images%20and%20QR%20codes/iphone.png)  
+![](./public/Images%20and%20QR%20codes/fifa.png)
+![](./public/Images%20and%20QR%20codes/reebok.png)
+![](./public/Images%20and%20QR%20codes/iphone.png)  
   
 4. **Payment Option**: Every time a new marker gets detected, the payment options come along with the AR models, making the workflow from advertising to purchase an essential keypoint for our web app.
      
