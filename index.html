@@ -2,12 +2,41 @@
 <html>
      <link rel="stylesheet" href="style.css">
      <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/ar.js/2.1.1/aframe-ar.min.js"></script>
      <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
      <script src="gesture.js"></script>
      <script src="script.js"></script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
      <link rel="stylesheet" href="particles.css">
+     <script>
+          AFRAME.registerComponent('registerevents', {
+		init: function () {
+			var marker = this.el;
+
+			marker.addEventListener('markerFound', function() {
+				var markerId = marker.id;
+				console.log('markerFound', markerId);
+                    
+                    	 document.querySelector('#football-animation').emit('footballAnimation');
+			 document.querySelector('#football-animation').emit('footballRotate');
+
+			 document.querySelector('#reebok-animation').emit('reebokAnimation');
+			 document.querySelector('#reebok-animation').emit('reebokRotate');	
+				
+                    	 document.querySelector('#iphone-animation').emit('iphoneAnimation');
+			 document.querySelector('#iphone-animation').emit('iphoneRotate');
+                    
+			});
+
+			marker.addEventListener('markerLost', function() {
+				var markerId = marker.id;
+				console.log('markerLost', markerId);
+				// TODO: Add your own code here to react to the marker being lost.
+			});
+		}
+	});
+         
+     </script>
   <body>
        
     <div id="splash">
@@ -39,34 +68,51 @@
         <p class="laptop">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quos molestiae id quasi, voluptas quaerat vitae laudantium eveniet aliquam vel, sunt, error earum dolores. Iste aut natus porro velit vero?</p>
         <button id="ARworld" onclick="document.body.removeChild(this.parentNode)">Enter the AR world</button>
     </div>
-    <a-scene arjs embedded renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector renderer="gammaOutput: true" id="scene" precision:mediump>
+    <a-scene arjs="debugUIEnabled: false" embedded renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector renderer="gammaOutput: true" id="scene">
          
 
          <a-assets>
               <a-asset-item id="football" src=./football/scene.gltf></a-asset-item>
          </a-assets>
 
-       <a-marker preset='custom1' type='pattern' url='image-targets/nike.patt'>
-                <a-entity scale="1 1 1">  <a-entity position="0 0 0"  animation="property: rotation; dur: 10000;
-                     to: 0 360 0; loop: false"  class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#football"></a-entity></a-entity>
+       <a-marker preset='custom1' type='pattern' url='image-targets/adidas.patt' emitevents='true' registerevents>
+               <a-entity id="football-animation" position="0 0 0" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#football"
+			  animation__rotation="property: rotation; startEvents: footballAnimation; to: 0 360 0; dur: 5000; easing: easeInSine"
+			  animation__y-axis="property: position; startEvents: footballRotate; from: 0 -5 0; to: 0 0 0; dur: 5000; easing: easeInSine">
+               </a-entity>
+            
+               <a-text value="Tap to Purchase" font="fonts/audiowide/Audiowide-Regular.json" shader="msdf" color="white" rotation="0 0 0" position="0 -1.5 -0.6" align="center" scale="0.8 0.8 0.8" zOffset="5" text>
+               </a-text>
        </a-marker>
-
+         
 
        <a-assets>
                 <a-asset-item id="reebok" src=./reebok/scene.gltf></a-asset-item>
        </a-assets>
 
-       <a-marker preset='custom2' type='pattern' url='image-targets/reebok.patt'> 
-                <a-entity scale="0.09 0.09 0.09"><a-entity position="0 0 0" scale="1 1 1" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#reebok"></a-entity></a-entity>
+       <a-marker preset='custom2' type='pattern' url='image-targets/reebok.patt' emitevents='true' registerevents> 
+               <a-entity id="reebok-animation" position="0 -0.4 0" scale="0.1 0.1 0.1" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#reebok"
+			  animation__rotation="property: rotation; startEvents: reebokAnimation; to: 0 360 0; dur: 5000; easing: easeInSine"
+			  animation__y-axis="property: position; startEvents: reebokRotate; from: 0 -5 0; to: 0 -0.4 0; dur: 5000; easing: easeInSine">
+	       </a-entity>
+             
+               <a-text value="Tap to Purchase" font="fonts/audiowide/Audiowide-Regular.json" shader="msdf" color="white" rotation="0 0 0" position="0 -1.5 -0.6" align="center" scale="0.8 0.8 0.8" zOffset="5" text>
+               </a-text>
        </a-marker>  
      
          
-        <a-assets>
-                <a-asset-item id="iphone" src=./iphone_13/scene.gltf></a-asset-item>
+       <a-assets>
+               <a-asset-item id="iphone" src=./iphone_13/scene.gltf></a-asset-item>
        </a-assets>
-
-       <a-marker preset='custom3' type='pattern' url='image-targets/iphone.patt'>
-               <a-entity rotation="0 -270 270" position="-0.25 0 0"><a-entity position="0 0 0" scale="1 1 1" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#iphone"></a-entity> </a-entity>
+            
+       <a-marker preset='custom3' type='pattern' url='image-targets/iphone.patt' emitevents='true' registerevents> 
+               <a-entity rotation="0 90 0"><a-entity id="iphone-animation" position="0.1 0 0" scale="1 1 1" class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" gltf-model="#iphone"
+			  animation__rotation="property: rotation; startEvents: iphoneAnimation; to: 0 360 0; dur: 5000; easing: easeInSine"
+			  animation__y-axis="property: position; startEvents: iphoneRotate; from: 0.1 -5 0; to: 0.1 0 0; dur: 5000; easing: easeInSine" >
+               </a-entity></a-entity>
+           
+               <a-text value="Tap to Purchase" font="fonts/audiowide/Audiowide-Regular.json" shader="msdf" color="white" rotation="0 0 0" position="0 -1.9 -0.6" align="center" scale="0.8 0.8 0.8" zOffset="5" text>
+               </a-text>
        </a-marker>
              
       

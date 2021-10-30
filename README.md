@@ -18,6 +18,11 @@
 * https://github.com/n5ro/aframe-extras/issues/180
 
 
-![](./Images%20and%20QR%20codes/nike.png)
+![](./Images%20and%20QR%20codes/adidas.png)
 ![](./Images%20and%20QR%20codes/reebok.png)
 ![](./Images%20and%20QR%20codes/iphone.png)
+
+
+animate when marker found
+a-text click to button
+easing
