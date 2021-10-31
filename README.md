@@ -18,7 +18,8 @@
 
 # Introduction
 
-Built using [AR.js](https://github.com/AR-js-org/AR.js), we aim at developing an Augmented Reality Experience that not only lets you interact with 3D models but guides you through the whole workflow from advertising to purchasing, creating a unique WebAR shopping experience on the scan of a QR code. 
+Built using [AR.js](https://github.com/AR-js-org/AR.js), we aim at developing an Augmented Reality Experience that not only lets you interact with 3D models but guides you through the whole workflow from advertising to purchasing, creating a unique WebAR shopping experience on the scan of a QR code.  
+[Project WebAR | Demo Video](https://youtu.be/OmBQYGPB4Ys)
   
 - - -
   
