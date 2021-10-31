@@ -103,28 +103,6 @@
       </style>
 
     
-    <script type="text/javascript">
-        var url = document.URL;
-        var id = url.substring(url.lastIndexOf('/') + 1);
-    if(id == "pay.html#reebok")
-      {
-        document.getElementById("reebok").style.display = "block";
-				document.getElementById("sneakers").style.display = "none";
-				document.getElementById("iphone").style.display = "none";
-      }
-    if(id == "pay.html#sneakers")
-      {
-        document.getElementById("reebok").style.display = "none";
-				document.getElementById("sneakers").style.display = "block";
-				document.getElementById("iphone").style.display = "none";
-        }
-    if(id == "pay.html#iphone")
-        {
-        document.getElementById("reebok").style.display = "none";
-				document.getElementById("sneakers").style.display = "none";
-				document.getElementById("iphone").style.display = "block";      
-        }
-    </script>
     
     
 
@@ -228,7 +206,29 @@
       </div>
     </div>
   </section>
-
+<script type="text/javascript">
+        var url = document.URL;
+        var id = url.substring(url.lastIndexOf('/') + 1);
+    if(id == "pay.html#reebok")
+      {
+        document.getElementById("reebok").style.display = "block";
+	document.getElementById("sneakers").style.display = "none";
+	document.getElementById("iphone").style.display = "none";
+      }
+    if(id == "pay.html#sneakers")
+      {
+        document.getElementById("reebok").style.display = "none";
+	document.getElementById("sneakers").style.display = "block";
+	document.getElementById("iphone").style.display = "none";
+        }
+    if(id == "pay.html#iphone")
+        {
+        document.getElementById("reebok").style.display = "none";
+	document.getElementById("sneakers").style.display = "none";
+	document.getElementById("iphone").style.display = "block";      
+        }
+    </script>
+    
   </body>
  
 </html>
